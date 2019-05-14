@@ -1,0 +1,137 @@
+<template>
+  <div>
+    <div class="burger-wrap">
+      <div :class="['nav-burger', showMenu ? 'active' : '']">
+        <button class="menu-toggle" @click.prevent="openMenu">
+          Menu
+        </button>
+      </div>
+    </div>
+    <transition name="black">
+      <div
+        class="black-screen"
+        v-show="showMenu"
+        @click.prevent="openMenu"
+      ></div>
+    </transition>
+    <transition name="side">
+      <div class="side-nav" v-show="showMenu">
+        <div class="side-header">
+          <h2>捉妖雷达 - Web</h2>
+          <p>Version: {{ version }}</p>
+          <iframe
+            src="https://ghbtns.com/github-btn.html?user=liuzirui1122&repo=zhuoyao_radar&type=star&count=true&size=large"
+            frameborder="0"
+            scrolling="0"
+            width="160px"
+            height="30px"
+            style="margin-top:5px"
+          ></iframe>
+        </div>
+        <div class="side-content">
+          <div class="header">筛选</div>
+          <ul>
+            <template v-for="item in filters">
+              <li :key="item.key">
+                <span class="tag">{{item.text}}</span>
+                <el-switch v-model="settings.fit[item.key]"> </el-switch>
+              </li>
+            </template>
+          </ul>
+          <div class="hr"></div>
+          <div class="header">设置</div>
+          <ul>
+            <li>
+              <span class="tag">点击地图自动搜索</span>
+              <el-switch v-model="settings.auto_search"> </el-switch>
+            </li>
+            <li>
+              <span class="tag">显示剩余时间</span>
+              <el-switch v-model="settings.show_time"> </el-switch>
+            </li>
+            <li>
+              <span class="tag">记住上次退出位置</span>
+              <el-switch v-model="settings.position_sync"> </el-switch>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </transition>
+  </div>
+</template>
+<script>
+import { getLocalStorage } from './util';
+
+export default {
+  name: 'radar-right-nav',
+  props: {
+    version: {
+      type: String,
+      default: ''
+    },
+    settings: {
+      type: Object,
+      default: {}
+    }
+  },
+  data() {
+    return {
+      filters: [
+        {
+          text: '稀有',
+          key: 'rare'
+        },
+        {
+          text: '1觉',
+          key: 't1'
+        },
+        {
+          text: '2觉',
+          key: 't2'
+        },
+        {
+          text: '巢穴',
+          key: 'nest'
+        },
+        {
+          text: '地域',
+          key: 'feature'
+        },
+        {
+          text: '鲲鲲',
+          key: 'fish'
+        },
+        {
+          text: '元素',
+          key: 'element'
+        },
+        {
+          text: '其他所有（慎选）',
+          key: 'all'
+        }
+      ],
+      showMenu: false
+    };
+  },
+  mounted: function() {
+    let settings = getLocalStorage('radar_settings');
+    if (!settings) {
+      this.openMenu();
+    }
+  },
+  methods: {
+    openMenu() {
+      this.showMenu = !this.showMenu;
+    }
+  }
+};
+</script>
+<style lang="less">
+.side-content {
+  .header {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+}
+</style>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>捉妖雷达 web</title>
+    <meta name="application-name" content="value" />
+    <meta name="keywords" content="value" />
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    <meta name="HandheldFriendly" content="true" />
+    <script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=2LWBZ-FEQK6-KKYS2-M6WR4-PFGS5-RZBP3"></script>
+  <link href="./dist/index.827a97eb.css" rel="stylesheet"></head>
+  <body onload="init()">
+    <div id="root"></div>
+  <script type="text/javascript" src="./dist/index.f82f5be9.js"></script>
+  </body>
+  <script>
+        var pt = e.point;
+        geoc.getLocation(pt, function (rs) {
+            var addComp = rs.addressComponents;
+            var address = [];
+            if (addComp.province.length > 0) {
+                address.push(addComp.province);
+            }
+            if (addComp.city.length > 0) {
+                address.push(addComp.city);
+            }
+            if (addComp.district.length > 0) {
+                address.push(addComp.district);
+            }
+            if (addComp.street.length > 0) {
+                address.push(addComp.street);
+            }
+            if (addComp.streetNumber.length > 0) {
+                address.push(addComp.streetNumber);
+            }
+            window.external.position(e.point.lat, e.point.lng, address.join(','));
+</script>
+</html>

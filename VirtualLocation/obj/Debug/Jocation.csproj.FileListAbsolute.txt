@@ -1,0 +1,15 @@
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\bin\Debug\Jocation.exe.config
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\bin\Debug\Jocation.exe
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\bin\Debug\Jocation.pdb
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\bin\Debug\iMobileDevice-net.dll
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\bin\Debug\iMobileDevice-net.pdb
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\bin\Debug\iMobileDevice-net.xml
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\obj\Debug\Jocation.csprojAssemblyReference.cache
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\obj\Debug\LocationCleaned.frmMain.resources
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\obj\Debug\Jocation.Properties.Resources.resources
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\obj\Debug\Jocation.csproj.GenerateResource.cache
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\obj\Debug\Jocation.csproj.CoreCompileInputs.cache
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\obj\Debug\Jocation.csproj.CopyComplete
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\obj\Debug\Jocation.exe
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\obj\Debug\Jocation.pdb
+C:\Users\w7293\Desktop\JocationRelease-master\Jocation\bin\Debug\DMSkin.dll

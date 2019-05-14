@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>欢迎使用百度云主机服务</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <style type="text/css">
+        html,
+        body,
+        ul,
+        li,
+        ol,
+        dl,
+        dd,
+        dt,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        form,
+        img {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            border: none;
+        }
+        body {
+            color: #333;
+            font: 12px/20px 'Microsoft Yahei', 'Simsun', 'Arial', sans-serif;
+            background-color: #fff;
+        }
+        .clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear:both;
+        }
+        .clearfix {
+            zoom:1;
+        }
+        .clearit {
+            clear: both;
+            height: 0;
+            font-size: 0;
+            overflow: hidden;
+        }
+        a,
+        a:link {
+            color: #0d99ff;
+            text-decoration:none;
+        }
+        a:visited {
+            color: #0d99ff;
+        }
+        a:hover,
+        a:active,
+        a:focus {
+            color: #0d99ff;
+            text-decoration:none;
+        }
+
+        .main {
+            margin: 30px auto;
+            width: 80%;
+            min-width: 1000px;
+            min-height: 300px;
+            position: relative;
+        }
+        .main .border {
+            position: absolute;
+        }
+        .main .top-border,
+        .main .bottom-border {
+            height: 15px;
+            width: 100%;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAPCAMAAACoYt2rAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzUzRkQ2NTg5RkNFMTFFNTk4NTlEOTJEMzBDNDgxQTIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzUzRkQ2NTk5RkNFMTFFNTk4NTlEOTJEMzBDNDgxQTIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NTNGRDY1NjlGQ0UxMUU1OTg1OUQ5MkQzMEM0ODFBMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3NTNGRDY1NzlGQ0UxMUU1OTg1OUQ5MkQzMEM0ODFBMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuYjt3sAAAA/UExURf///8/r/9Pt/9fu/9Dr//b7/+/4//T6//7//+74/9Tt/+z3/9Hs//P6/+33/9bu//X7//f8/9Xt/+v3/9Ls/zpGPK0AAABhSURBVHjapJFLDoAgEMWeqKMwCvi5/1ldm5RE4ls3k1Kk12yAjVU034ANC6FrDMTOeNem7w6ZfMuODrnDIdLbzgaLzbCDLrqbuJndxB4dzdjBiU3czP/+W2k0Q1900CPAABesAxe65PDoAAAAAElFTkSuQmCC) 0 0 repeat-x;
+            z-index: 1;
+        }
+        .main .top-border {
+            background-position: -15px 0;
+        }
+        .main .bottom-border {
+            bottom: 0;
+        }
+        .main .left-border,
+        .main .right-border {
+            width: 15px;
+            height: 100%;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAsCAMAAACNMBLgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUFGMkM5NkI5RkNFMTFFNUJCRkQ4MDQ4QjI4NjYyRjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUFGMkM5NkM5RkNFMTFFNUJCRkQ4MDQ4QjI4NjYyRjgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBQUYyQzk2OTlGQ0UxMUU1QkJGRDgwNDhCMjg2NjJGOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBQUYyQzk2QTlGQ0UxMUU1QkJGRDgwNDhCMjg2NjJGOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnyYch4AAABCUExURf///8/r/9Dr//z+/+f1//j8/+X0/9zw/+b1//r9/9nv//3+/9rv//v9/9jv//f8/9vw//7//+j1/93x/+T0//n9/2wKGIsAAAB8SURBVHjazNJJCsNQDANQy/5zf+b2/ldNSksqdx+Idg8MxsginDh6bmDaDHZtYE8d7JrBtgZ2nMGOGeyhg/1qYE8Z7MqEDCOcO7xxqfXPyTsIW4M5p/exPxZha3iwtXwobvh0ELYmc07U4sGVSz4XfaPPxf1EkTvFdgEGADpiAxDs5/odAAAAAElFTkSuQmCC) 0 -14px repeat-y;
+        }
+        .main .left-border {
+            background-position: 0 -14px;
+        }
+        .main .right-border {
+            right: 0;
+        }
+        .main .content {
+            padding: 40px 75px;
+        }
+        .main .content h1 {
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 41px;
+            color: #1ab76a;
+        }
+        .main .content h2 {
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 20px;
+            color: #1ab76a;
+        }
+        .main .line {
+            left: 6px;
+            top: 0;
+            position: absolute;
+            width: 3px;
+            height: 100%;
+            background-color: #f0aa08;
+        }
+        .main .line .top,
+        .main .line .bottom {
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 3px;
+        }
+        .main .line .top {
+            top: -5px;
+            height: 20px;
+            background-image: -webkit-linear-gradient(top, #fff, #f0aa08);
+            background-image: -moz-linear-gradient(top, #fff, #f0aa08);
+            background-image: -moz-linear-gradient(to bottom, #fff, #f0aa08);
+            background-image: -o-linear-gradient(to bottom, #fff, #f0aa08);
+            background-image: linear-gradient(to bottom, #fff, #f0aa08);
+            background-repeat: repeat;
+        }
+        .main .line .bottom {
+            bottom: -5px;
+            height: 80px;
+            background-image: -webkit-linear-gradient(top, #f0aa08, #1ab76a, #fff);
+            background-image: -moz-linear-gradient(top, #f0aa08, #1ab76a, #fff);
+            background-image: -moz-linear-gradient(to bottom, #f0aa08, #1ab76a, #fff);
+            background-image: -o-linear-gradient(to bottom, #f0aa08, #1ab76a, #fff);
+            background-image: linear-gradient(to bottom, #f0aa08, #1ab76a, #fff);
+            background-repeat: repeat;
+        }
+        .main .intruduction {
+
+        }
+        .main .intruduction p.title {
+            color: #6f6f6f;
+            padding: 14px 0;
+        }
+        .main .intruduction-box {
+            position: relative;
+            padding-left: 35px;
+            margin: 27px 0;
+        }
+        .main .intruduction-box p {
+            position: relative;
+            line-height: 24px;
+            font-size: 14px;
+            padding: 11px 0;
+        }
+        .main .intruduction-box p i {
+            content: "";
+            background-color: #f0aa08;
+            display: block;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            position: absolute;
+            left: -35px;
+            top: 15.5px;
+        }
+        .main .intruduction-box p.last-item i {
+            background-color: #1ab76a;
+        }
+
+        .main .footer {
+            margin-top: 33px;
+            border-top: 1px solid #f1f1f1;
+        }
+        .main .footer p {
+            color: #6f6f6f;
+            padding: 28px 0 17px;
+        }
+        .main .footer .links a {
+            float: left;
+            display: inline;
+            margin-right: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="border top-border"></div>
+        <div class="border bottom-border"></div>
+        <div class="border left-border"></div>
+        <div class="border right-border"></div>
+        <div class="content">
+            <h1>欢迎使用百度云主机服务</h1>
+            <h2>Welcome to use Baidu Cloud Hosting service</h2>
+            <div class="intruduction">
+                <p class="title">您的云虚拟主机已创建成功，接下来您需要：</p>
+                <div class="intruduction-box">
+                    <div class="line"><i class="top"></i><i class="bottom"></i></div>
+                    <p class="item first-item"><i></i>进入<a href="http://login-gz.bcehost.com/login" target="_blank">主机控制面板</a>，完成FTP/数据库密码设置等主机初始化操作。</p>
+                    <p class="item"><i></i>使用FTP工具上传Web文件到您的主机/webroot/文件夹下。FTP连接时请注意默认端口设置。</p>
+                    <p><i></i>登录<a href="http://login-gz.bcehost.com/login" target="_blank">主机控制面板</a>，进行数据库配置、数据导入等操作；如您无需数据库或通过Web自动安装，忽略此步骤。</p>
+                    <p><i></i>刷新该主机访问地址，调试或安装您的Web应用。</p>
+                    <p><i></i>百度云虚拟主机启用了OPCache加速引擎，您所上传的文件可能需要60s后生效。如您需要马上生效，可以进入控制面板执行“重载”。</p>
+                    <p><i></i>网站正式发布前，对您所绑定的域名进行百度备案。如您已在其他服务商完成过备案，则需在15天内完成接入备案初审。更多信息请进入备案服务。</p>
+                    <p class="last-item"><i></i>完成！可以对外正式发布您的网站了。</p>
+                </div>
+            </div>
+            <div class="footer">
+                <p>本网页为百度云虚拟主机默认欢迎页。如您是主机管理员，可登录主机删除此页。</p>
+                <div class="links clearfix">
+                    <a href="http://bce.baidu.com/doc/BCH/index.html" target="_blank">主机帮助</a>
+                    <a href="http://beian.bce.baidu.com/" target="_blank">备案服务</a>
+                    <a href="http://bce.baidu.com/" target="_blank">开放云官网</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
